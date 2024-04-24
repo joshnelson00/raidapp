@@ -4,10 +4,39 @@
         <title>
             
         </title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
     </head>
     <body>
+        
+        <div class="navbar">
+            <h2 id="logo">RAIDLOGIX</h2>
+            <div class="nav-div">
+                <div class="nav-back">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-item">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item">Meetings</a></li>
+                    <li class="nav-item"><a href="#" class="nav-item">Profile</a></li>
+                </ul>
+                
+            </div>
+        </div>
         {% block body %}
         {% endblock %}
+
+        <div id="footer">
+            <div id="footer-line"></div>
+            <p id="footer-logo">RAIDLOGIX</p>
+            <div id="footer-info">
+                
+                <ul>
+                <li class="footer-link"><a class="footer-link" href= "mailto: joshuaknelson1202@icloud.com">joshuaknelson1202@icloud.com</a>
+                <li class="footer-link"><a class="footer-link" href="#">Privacy Policy</a></li>
+                <li class="footer-link"><a class="footer-link" href="https://www.linkedin.com/in/joshuanelson01/?trk=public-profile-join-page">Connect Here</a></li>
+                <li class="footer-link"><a class="footer-link" href="https://github.com/joshnelson00">GitHub</a></li>
+            </ul>
+            </div>
+        </div>
     </body>
 
 </html>
